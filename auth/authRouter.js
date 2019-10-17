@@ -79,6 +79,8 @@ authRouter.post('/login', (req, res) => {
     })
 })
 
+
+
 //could be in a separate file
 function generateToken(user){
 

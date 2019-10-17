@@ -51,10 +51,21 @@ function update(id, changes){
 
 }
 
-function remove(id){
+function remove({ id }){
 
     return db('users')
     .where({'users.id': id})
     .delete();
 
 }
+
+/*
+function remove(id){
+
+    return db('accounts')
+    .where('id', id)
+    .delete()
+    .then(count => {
+        count > 0 ? this.get(id) : null;
+    })
+}*/

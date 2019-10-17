@@ -32,7 +32,7 @@ server.use('/api/users', userRouter);
 
 server.get('/', (req, res) => {
     res.status(200).json({ api: 'running' });
-  });
+});
   
 
 //export server
